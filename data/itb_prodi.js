@@ -2254,7 +2254,7 @@ window.ITB_PRODI_DATA = [
   },
   {
     "id": "s1-desain-produk",
-    "kode": "17201",
+    "kode": "17501",
     "nama": "Desain Produk",
     "nama_en": "Industrial Product Design",
     "jenjang": "S1",

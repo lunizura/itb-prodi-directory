@@ -1122,7 +1122,7 @@ RAW_PRODI = [
     },
     {
         "id": "s1-desain-produk",
-        "kode": "17201",
+        "kode": "17501",
         "nama": "Desain Produk",
         "nama_en": "Industrial Product Design",
         "jenjang": "S1", "kategori": "Sarjana", "rumpun": "Seni & Desain",
