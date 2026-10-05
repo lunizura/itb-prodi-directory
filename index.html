@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direktori Program Studi ITB | Institut Teknologi Bandung</title>
+  <meta name="description" content="Direktori komprehensif program studi Institut Teknologi Bandung (ITB). Informasi daya tampung, jalur TPB, akreditasi internasional (ABET, ASIIN, AACSB, IABEE), dan kampus Ganesa, Jatinangor, Cirebon.">
+  <meta name="keywords" content="ITB, Institut Teknologi Bandung, Program Studi ITB, Jurusan ITB, TPB ITB, Akreditasi ITB, ABET ITB, Daya Tampung ITB, SNBP SNBT ITB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --itb-blue: #0284c7;
+      --itb-blue-dark: #0369a1;
+      --itb-blue-light: #e0f2fe;
+      --itb-blue-border: #bae6fd;
+      --itb-navy: #0f172a;
+      --itb-navy-soft: #1e293b;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --emerald-green: #059669;
+      --emerald-bg: #d1fae5;
+      --amber-gold: #d97706;
+      --amber-bg: #fef3c7;
+      --purple-accent: #7c3aed;
+      --purple-bg: #ede9fe;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+      --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.06);
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--slate-50);
+      color: var(--slate-800);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Header & Navigation */
+    .header-top {
+      background: linear-gradient(135deg, var(--slate-900) 0%, #032d4d 50%, var(--itb-navy) 100%);
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-badge {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--itb-blue) 0%, #0369a1 100%);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.05em;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .brand-text p {
+      font-size: 0.75rem;
+      color: var(--slate-400);
+      font-family: var(--font-mono);
+      letter-spacing: 0.04em;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-lang, .btn-view {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+      font-family: var(--font-mono);
+    }
+
+    .btn-lang:hover, .btn-view:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-lang.active, .btn-view.active {
+      background: var(--itb-blue);
+      border-color: var(--itb-blue);
+      color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(180deg, var(--slate-900) 0%, #0c1e33 60%, var(--slate-900) 100%);
+      color: #ffffff;
+      padding: 3.5rem 0 3rem 0;
+      position: relative;
+      border-bottom: 1px solid var(--slate-800);
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(2, 132, 199, 0.4);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: #38bdf8;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+    .hero-title span {
+      color: #38bdf8;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--slate-300);
+      max-width: 760px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+
+    .metric-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .metric-num {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+      color: #ffffff;
+      font-family: var(--font-mono);
+    }
+
+    .metric-num.highlight {
+      color: #38bdf8;
+    }
+
+    .metric-label {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--slate-300);
+      margin-bottom: 0.25rem;
+    }
+
+    .metric-sub {
+      font-size: 0.725rem;
+      color: var(--slate-400);
+      font-family: var(--font-mono);
+    }
+
+    /* Filter Panel */
+    .filter-section {
+      padding: 1.75rem 0;
+      background: #ffffff;
+      border-bottom: 1px solid var(--slate-200);
+      position: sticky;
+      top: 72px;
+      z-index: 30;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 48px;
+      padding: 0 3.25rem 0 1.25rem;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      color: var(--slate-900);
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      background: #ffffff;
+      border-color: var(--itb-blue);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .search-shortcut {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0.2rem 0.45rem;
+      background: var(--slate-200);
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: var(--slate-600);
+      pointer-events: none;
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .filter-select {
+      height: 42px;
+      padding: 0 0.85rem;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-family: var(--font-sans);
+      color: var(--slate-800);
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+      width: 100%;
+    }
+
+    .filter-select:focus {
+      border-color: var(--itb-blue);
+      background: #ffffff;
+    }
+
+    .btn-reset {
+      height: 42px;
+      padding: 0 1.25rem;
+      background: var(--slate-100);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .btn-reset:hover {
+      background: var(--slate-200);
+      color: var(--slate-900);
+    }
+
+    /* Quick Filter Chips */
+    .quick-chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      align-items: center;
+    }
+
+    .chip-label {
+      font-size: 0.775rem;
+      font-weight: 700;
+      color: var(--slate-500);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-right: 0.25rem;
+    }
+
+    .chip-btn {
+      padding: 0.3rem 0.75rem;
+      background: var(--slate-100);
+      border: 1px solid var(--slate-200);
+      border-radius: 999px;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .chip-btn:hover {
+      background: var(--slate-200);
+      color: var(--slate-900);
+    }
+
+    .chip-btn.active {
+      background: var(--itb-blue);
+      border-color: var(--itb-blue);
+      color: #ffffff;
+    }
+
+    /* Active Filter Summary Bar */
+    .results-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+      font-size: 0.875rem;
+      color: var(--slate-600);
+    }
+
+    .results-count {
+      font-weight: 700;
+      color: var(--slate-900);
+      font-family: var(--font-mono);
+    }
+
+    .view-toggles {
+      display: flex;
+      background: var(--slate-200);
+      padding: 3px;
+      border-radius: var(--radius-md);
+      gap: 2px;
+    }
+
+    .view-btn {
+      border: none;
+      background: transparent;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--slate-600);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .view-btn.active {
+      background: #ffffff;
+      color: var(--slate-900);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Grid Layout */
+    .prodi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .prodi-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .prodi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--itb-blue);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.725rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      letter-spacing: 0.02em;
+    }
+
+    .badge-jenjang {
+      background: var(--itb-navy);
+      color: #ffffff;
+    }
+
+    .badge-tpb {
+      background: var(--itb-blue-light);
+      color: var(--itb-blue-dark);
+      border: 1px solid var(--itb-blue-border);
+    }
+
+    .badge-campus {
+      background: var(--slate-100);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-300);
+    }
+
+    .badge-unggul {
+      background: var(--emerald-bg);
+      color: var(--emerald-green);
+      font-weight: 700;
+    }
+
+    .badge-intl {
+      background: var(--purple-bg);
+      color: var(--purple-accent);
+      border: 1px solid #ddd6fe;
+    }
+
+    .card-code {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--slate-400);
+      font-weight: 600;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-title-en {
+      font-size: 0.85rem;
+      color: var(--slate-500);
+      font-style: italic;
+      margin-bottom: 0.85rem;
+    }
+
+    .card-faculty {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--itb-blue-dark);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--slate-600);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Quota Bar */
+    .quota-box {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .quota-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--slate-700);
+      margin-bottom: 0.5rem;
+    }
+
+    .quota-total {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .quota-bar-track {
+      height: 8px;
+      background: var(--slate-200);
+      border-radius: 999px;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .bar-seg-snbp {
+      background: #0284c7;
+    }
+
+    .bar-seg-snbt {
+      background: #059669;
+    }
+
+    .bar-seg-sm {
+      background: #d97706;
+    }
+
+    .quota-legend {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: var(--slate-500);
+      font-family: var(--font-mono);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .legend-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .dot-snbp { background: #0284c7; }
+    .dot-snbt { background: #059669; }
+    .dot-sm { background: #d97706; }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--slate-100);
+      padding-top: 1rem;
+    }
+
+    .card-intl-chips {
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-detail {
+      background: transparent;
+      border: 1px solid var(--itb-blue);
+      color: var(--itb-blue);
+      padding: 0.45rem 0.95rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-detail:hover {
+      background: var(--itb-blue);
+      color: #ffffff;
+    }
+
+    /* Table Layout */
+    .table-container {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      overflow-x: auto;
+      margin-bottom: 3rem;
+      box-shadow: var(--shadow-sm);
+      display: none;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    .data-table th {
+      background: var(--slate-100);
+      padding: 0.9rem 1rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      border-bottom: 1px solid var(--slate-200);
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .data-table th:hover {
+      background: var(--slate-200);
+    }
+
+    .data-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: middle;
+    }
+
+    .data-table tbody tr {
+      transition: background-color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .data-table tbody tr:hover {
+      background: var(--slate-50);
+    }
+
+    .table-prodi-name {
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .table-prodi-sub {
+      font-size: 0.775rem;
+      color: var(--slate-500);
+    }
+
+    /* Empty State */
+    .empty-state {
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: #ffffff;
+      border: 1px dashed var(--slate-300);
+      border-radius: var(--radius-lg);
+      margin-bottom: 3rem;
+      display: none;
+    }
+
+    .empty-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-desc {
+      font-size: 0.9rem;
+      color: var(--slate-500);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--slate-900);
+      color: var(--slate-400);
+      padding: 3.5rem 0 2rem 0;
+      border-top: 1px solid var(--slate-800);
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h2 {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      line-height: 1.6;
+      max-width: 480px;
+    }
+
+    .footer-col h3 {
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--slate-400);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--slate-800);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 1.85rem;
+      }
+      .filter-section {
+        position: static;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .results-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-top">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="brand-wrap">
+          <div class="brand-badge">ITB</div>
+          <div class="brand-text">
+            <h1 id="i18n-header-title">Direktori Program Studi ITB</h1>
+            <p id="i18n-header-sub">INSTITUT TEKNOLOGI BANDUNG - EST. 1920</p>
+          </div>
+        </a>
+
+        <div class="nav-actions">
+          <button class="btn-lang" id="btn-toggle-lang" title="Ganti Bahasa / Switch Language">
+            <span id="lang-indicator">EN</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag" id="i18n-hero-tag">Official Academic Catalog 2026</div>
+      <h2 class="hero-title" id="i18n-hero-title">
+        Eksplorasi Program Studi <span>Institut Teknologi Bandung</span>
+      </h2>
+      <p class="hero-desc" id="i18n-hero-desc">
+        Katalog komprehensif 58 program studi di ITB. Pahami jalur penerimaan Fakultas/Sekolah TPB (Tahap Persiapan Bersama), distribusi 3 kampus (Ganesa, Jatinangor, Cirebon), serta akreditasi global berstandar ABET, ASIIN, AACSB, dan IABEE.
+      </p>
+
+      <!-- Key Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num highlight" id="metric-total-prodi">58</div>
+          <div class="metric-label" id="i18n-metric-prodi">Program Studi</div>
+          <div class="metric-sub" id="i18n-metric-prodi-sub">S1 & Pascasarjana</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num" id="metric-total-fakultas">12</div>
+          <div class="metric-label" id="i18n-metric-fakultas">Fakultas & Sekolah</div>
+          <div class="metric-sub" id="i18n-metric-fakultas-sub">Unit Penerimaan TPB</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num" id="metric-total-unggul">100%</div>
+          <div class="metric-label" id="i18n-metric-unggul">Akreditasi Unggul / A</div>
+          <div class="metric-sub" id="i18n-metric-unggul-sub">BAN-PT & LAM Terakreditasi</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num highlight" id="metric-total-intl">47</div>
+          <div class="metric-label" id="i18n-metric-intl">Akreditasi Global</div>
+          <div class="metric-sub">ABET, ASIIN, AACSB, IABEE</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num" id="metric-total-quota">5.160</div>
+          <div class="metric-label" id="i18n-metric-quota">Total Daya Tampung</div>
+          <div class="metric-sub">SNBP + SNBT + SM-ITB</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Search Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" placeholder="Cari program studi, kode, fakultas, atau prospek karir..." autocomplete="off">
+          <div class="search-shortcut">/</div>
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <select id="filter-jenjang" class="filter-select">
+          <option value="">Semua Jenjang</option>
+          <option value="S1">S1 (Sarjana)</option>
+          <option value="S2">S2 (Magister)</option>
+        </select>
+
+        <select id="filter-fakultas" class="filter-select">
+          <option value="">Semua Fakultas / Sekolah</option>
+          <option value="FITB">FITB - Ilmu & Teknologi Kebumian</option>
+          <option value="FMIPA">FMIPA - Matematika & IPA</option>
+          <option value="FSRD">FSRD - Seni Rupa & Desain</option>
+          <option value="FTI">FTI - Teknologi Industri</option>
+          <option value="FTMD">FTMD - Teknik Mesin & Dirgantara</option>
+          <option value="FTSL">FTSL - Teknik Sipil & Lingkungan</option>
+          <option value="FTTM">FTTM - Pertambangan & Perminyakan</option>
+          <option value="SAPPK">SAPPK - Arsitektur & Perencanaan</option>
+          <option value="SBM">SBM - Bisnis & Manajemen</option>
+          <option value="SF">SF - Sekolah Farmasi</option>
+          <option value="SITH">SITH - Ilmu & Teknologi Hayati</option>
+          <option value="STEI">STEI - Elektro & Informatika</option>
+        </select>
+
+        <select id="filter-rumpun" class="filter-select">
+          <option value="">Semua Rumpun Ilmu</option>
+          <option value="Saintek">Saintek (Sains & Teknologi)</option>
+          <option value="Seni & Desain">Seni & Desain</option>
+          <option value="Bisnis & Manajemen">Bisnis & Manajemen</option>
+          <option value="Soshum">Soshum (Sosial Humaniora)</option>
+        </select>
+
+        <select id="filter-kampus" class="filter-select">
+          <option value="">Semua Kampus ITB</option>
+          <option value="Ganesa">Kampus Ganesa (Bandung)</option>
+          <option value="Jatinangor">Kampus Jatinangor (Sumedang)</option>
+          <option value="Cirebon">Kampus Cirebon</option>
+        </select>
+
+        <select id="filter-akreditasi-intl" class="filter-select">
+          <option value="">Semua Akreditasi Internasional</option>
+          <option value="ABET">ABET (Engineering & Computing)</option>
+          <option value="ASIIN">ASIIN (Natural Sciences & Eng.)</option>
+          <option value="AACSB">AACSB (Business & Management)</option>
+          <option value="IABEE">IABEE (Indonesian Accreditation Board)</option>
+        </select>
+
+        <button id="btn-reset-filters" class="btn-reset">Reset Filter</button>
+      </div>
+
+      <!-- Quick Chips -->
+      <div class="quick-chips-row">
+        <span class="chip-label" id="i18n-chip-label">Quick Filter:</span>
+        <button class="chip-btn active" data-chip-type="all">Semua</button>
+        <button class="chip-btn" data-chip-type="intl" data-chip-val="ABET">ABET Accredited</button>
+        <button class="chip-btn" data-chip-type="intl" data-chip-val="ASIIN">ASIIN Accredited</button>
+        <button class="chip-btn" data-chip-type="kampus" data-chip-val="Ganesa">Kampus Ganesa</button>
+        <button class="chip-btn" data-chip-type="kampus" data-chip-val="Jatinangor">Kampus Jatinangor</button>
+        <button class="chip-btn" data-chip-type="kampus" data-chip-val="Cirebon">Kampus Cirebon</button>
+        <button class="chip-btn" data-chip-type="fakultas" data-chip-val="STEI">STEI</button>
+        <button class="chip-btn" data-chip-type="fakultas" data-chip-val="FTI">FTI</button>
+        <button class="chip-btn" data-chip-type="fakultas" data-chip-val="SBM">SBM</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Directory Body -->
+  <main class="container">
+    <div class="results-bar">
+      <div>
+        <span id="i18n-showing">Menampilkan</span>
+        <span class="results-count" id="results-count">58</span>
+        <span id="i18n-prodi-text">program studi</span>
+      </div>
+
+      <div class="view-toggles">
+        <button class="view-btn active" id="view-mode-grid" title="Grid View">Grid</button>
+        <button class="view-btn" id="view-mode-table" title="Table View">Tabel</button>
+      </div>
+    </div>
+
+    <!-- Grid View Container -->
+    <div class="prodi-grid" id="prodi-grid">
+      <!-- Populated dynamically via JS -->
+    </div>
+
+    <!-- Table View Container -->
+    <div class="table-container" id="prodi-table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th data-sort="kode">Kode</th>
+            <th data-sort="nama">Program Studi</th>
+            <th data-sort="fakultas_singkatan">Fakultas / TPB</th>
+            <th data-sort="jenjang">Jenjang</th>
+            <th data-sort="lokasi">Kampus</th>
+            <th data-sort="akreditasi">Akreditasi</th>
+            <th data-sort="daya_tampung">Daya Tampung</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="prodi-table-body">
+          <!-- Populated dynamically via JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state">
+      <h3 class="empty-title" id="i18n-empty-title">Tidak ada program studi yang cocok</h3>
+      <p class="empty-desc" id="i18n-empty-desc">Coba sesuaikan kata kunci pencarian atau bersihkan filter di atas.</p>
+      <button class="btn-reset" id="btn-empty-reset">Bersihkan Filter</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Institut Teknologi Bandung</h2>
+          <p id="i18n-footer-desc">
+            Direktori komprehensif program studi, fakultas/sekolah TPB, dan akreditasi internasional Institut Teknologi Bandung (ITB). Data dihimpun dari portal resmi Penerimaan Mahasiswa Baru ITB (admission.itb.ac.id) dan database akreditasi BAN-PT, LAM, ABET, ASIIN, AACSB.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 id="i18n-footer-portals">Portal Resmi</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.itb.ac.id" target="_blank" rel="noopener">Situs Utama ITB</a></li>
+            <li><a href="https://admission.itb.ac.id" target="_blank" rel="noopener">Admission ITB (SPMB)</a></li>
+            <li><a href="https://snpmb.bppp.kemdikbud.go.id" target="_blank" rel="noopener">Portal SNPMB BP3</a></li>
+            <li><a href="https://six.itb.ac.id" target="_blank" rel="noopener">Sistem Informasi Akademik SIX</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 id="i18n-footer-ecosystem">Ecosystem</h3>
+          <ul class="footer-links">
+            <li><a href="https://lunizura.github.io/keketatan-univ-indonesia/" target="_blank" rel="noopener">Keketatan Univ Indonesia</a></li>
+            <li><a href="https://lunizura.github.io/ui-prodi-directory/" target="_blank" rel="noopener">UI Prodi Directory</a></li>
+            <li><a href="https://github.com/lunizura/itb-prodi-directory" target="_blank" rel="noopener">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Institut Teknologi Bandung Study Programs Directory - Licensed under MIT. Zero Emojis Enforced.</div>
+        <div>Updated: 2026 - Bandung, Indonesia</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/itb_prodi.js"></script>
+  <script>
+    // State management and i18n dictionary
+    let currentLang = localStorage.getItem('itb_lang') || 'id';
+    let currentView = 'grid';
+    let sortColumn = 'nama';
+    let sortAsc = true;
+
+    const I18N = {
+      id: {
+        headerTitle: "Direktori Program Studi ITB",
+        headerSub: "INSTITUT TEKNOLOGI BANDUNG - EST. 1920",
+        heroTag: "KATALOG AKADEMIK RESMI 2026",
+        heroTitle: "Eksplorasi Program Studi <span>Institut Teknologi Bandung</span>",
+        heroDesc: "Katalog komprehensif 58 program studi di ITB. Pahami jalur penerimaan Fakultas/Sekolah TPB (Tahap Persiapan Bersama), distribusi 3 kampus (Ganesa, Jatinangor, Cirebon), serta akreditasi global berstandar ABET, ASIIN, AACSB, dan IABEE.",
+        metricProdi: "Program Studi",
+        metricProdiSub: "S1 & Pascasarjana",
+        metricFakultas: "Fakultas & Sekolah",
+        metricFakultasSub: "Unit Penerimaan TPB",
+        metricUnggul: "Akreditasi Unggul / A",
+        metricUnggulSub: "BAN-PT & LAM Terakreditasi",
+        metricIntl: "Akreditasi Global",
+        metricQuota: "Total Daya Tampung",
+        searchPlaceholder: "Cari program studi, kode, fakultas, atau prospek karir...",
+        allJenjang: "Semua Jenjang",
+        allFakultas: "Semua Fakultas / Sekolah",
+        allRumpun: "Semua Rumpun Ilmu",
+        allKampus: "Semua Kampus ITB",
+        allIntl: "Semua Akreditasi Internasional",
+        resetBtn: "Reset Filter",
+        quickFilter: "Quick Filter:",
+        showing: "Menampilkan",
+        prodiText: "program studi",
+        emptyTitle: "Tidak ada program studi yang cocok",
+        emptyDesc: "Coba sesuaikan kata kunci pencarian atau bersihkan filter di atas.",
+        viewDetail: "Lihat Detail",
+        quotaLabel: "Daya Tampung",
+        tpbLabel: "Jalur Masuk TPB:",
+        footerDesc: "Direktori komprehensif program studi, fakultas/sekolah TPB, dan akreditasi internasional Institut Teknologi Bandung (ITB). Data dihimpun dari portal resmi Penerimaan Mahasiswa Baru ITB (admission.itb.ac.id) dan database akreditasi BAN-PT, LAM, ABET, ASIIN, AACSB.",
+        footerPortals: "Portal Resmi",
+        footerEcosystem: "Ekosistem"
+      },
+      en: {
+        headerTitle: "ITB Study Programs Directory",
+        headerSub: "BANDUNG INSTITUTE OF TECHNOLOGY - EST. 1920",
+        heroTag: "OFFICIAL ACADEMIC CATALOG 2026",
+        heroTitle: "Explore Study Programs at <span>Bandung Institute of Technology</span>",
+        heroDesc: "Comprehensive catalog of 58 study programs at ITB. Learn about TPB (Common First Year) admission faculties, 3 distinct campuses (Ganesa, Jatinangor, Cirebon), and prestigious global accreditations (ABET, ASIIN, AACSB, IABEE).",
+        metricProdi: "Study Programs",
+        metricProdiSub: "Undergraduate & Graduate",
+        metricFakultas: "Faculties & Schools",
+        metricFakultasSub: "TPB Admission Units",
+        metricUnggul: "Accredited Unggul / A",
+        metricUnggulSub: "BAN-PT & LAM Certified",
+        metricIntl: "Global Accreditations",
+        metricQuota: "Total Seat Capacity",
+        searchPlaceholder: "Search study program, code, faculty, or career prospects...",
+        allJenjang: "All Degree Levels",
+        allFakultas: "All Faculties / Schools",
+        allRumpun: "All Academic Clusters",
+        allKampus: "All ITB Campuses",
+        allIntl: "All International Accreditations",
+        resetBtn: "Reset Filters",
+        quickFilter: "Quick Filter:",
+        showing: "Showing",
+        prodiText: "study programs",
+        emptyTitle: "No matching study programs found",
+        emptyDesc: "Try adjusting your search query or reset the filter selections above.",
+        viewDetail: "View Profile",
+        quotaLabel: "Capacity",
+        tpbLabel: "TPB Pathway:",
+        footerDesc: "Comprehensive directory of study programs, TPB faculties, and global accreditations of Bandung Institute of Technology (ITB). Grounded in official SPMB ITB admissions data and global accreditation boards.",
+        footerPortals: "Official Portals",
+        footerEcosystem: "Ecosystem"
+      }
+    };
+
+    // DOM Elements
+    const searchInput = document.getElementById('search-input');
+    const filterJenjang = document.getElementById('filter-jenjang');
+    const filterFakultas = document.getElementById('filter-fakultas');
+    const filterRumpun = document.getElementById('filter-rumpun');
+    const filterKampus = document.getElementById('filter-kampus');
+    const filterIntl = document.getElementById('filter-akreditasi-intl');
+    const btnReset = document.getElementById('btn-reset-filters');
+    const btnEmptyReset = document.getElementById('btn-empty-reset');
+    const prodiGrid = document.getElementById('prodi-grid');
+    const prodiTableBody = document.getElementById('prodi-table-body');
+    const prodiTableContainer = document.getElementById('prodi-table-container');
+    const resultsCount = document.getElementById('results-count');
+    const emptyState = document.getElementById('empty-state');
+    const btnToggleLang = document.getElementById('btn-toggle-lang');
+    const langIndicator = document.getElementById('lang-indicator');
+    const chipButtons = document.querySelectorAll('.chip-btn');
+    const viewModeGrid = document.getElementById('view-mode-grid');
+    const viewModeTable = document.getElementById('view-mode-table');
+
+    // Initialize
+    function init() {
+      applyLanguage(currentLang);
+      setupEventListeners();
+      renderDirectory();
+    }
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('itb_lang', lang);
+      document.documentElement.lang = lang;
+      langIndicator.textContent = lang === 'id' ? 'EN' : 'ID';
+
+      const t = I18N[lang];
+      document.getElementById('i18n-header-title').textContent = t.headerTitle;
+      document.getElementById('i18n-header-sub').textContent = t.headerSub;
+      document.getElementById('i18n-hero-tag').textContent = t.heroTag;
+      document.getElementById('i18n-hero-title').innerHTML = t.heroTitle;
+      document.getElementById('i18n-hero-desc').textContent = t.heroDesc;
+      document.getElementById('i18n-metric-prodi').textContent = t.metricProdi;
+      document.getElementById('i18n-metric-prodi-sub').textContent = t.metricProdiSub;
+      document.getElementById('i18n-metric-fakultas').textContent = t.metricFakultas;
+      document.getElementById('i18n-metric-fakultas-sub').textContent = t.metricFakultasSub;
+      document.getElementById('i18n-metric-unggul').textContent = t.metricUnggul;
+      document.getElementById('i18n-metric-unggul-sub').textContent = t.metricUnggulSub;
+      document.getElementById('i18n-metric-intl').textContent = t.metricIntl;
+      document.getElementById('i18n-metric-quota').textContent = t.metricQuota;
+      document.getElementById('i18n-chip-label').textContent = t.quickFilter;
+      document.getElementById('i18n-showing').textContent = t.showing;
+      document.getElementById('i18n-prodi-text').textContent = t.prodiText;
+      document.getElementById('i18n-empty-title').textContent = t.emptyTitle;
+      document.getElementById('i18n-empty-desc').textContent = t.emptyDesc;
+      document.getElementById('i18n-footer-desc').textContent = t.footerDesc;
+      document.getElementById('i18n-footer-portals').textContent = t.footerPortals;
+      document.getElementById('i18n-footer-ecosystem').textContent = t.footerEcosystem;
+      searchInput.placeholder = t.searchPlaceholder;
+      btnReset.textContent = t.resetBtn;
+      btnEmptyReset.textContent = t.resetBtn;
+
+      // Update options
+      filterJenjang.options[0].text = t.allJenjang;
+      filterFakultas.options[0].text = t.allFakultas;
+      filterRumpun.options[0].text = t.allRumpun;
+      filterKampus.options[0].text = t.allKampus;
+      filterIntl.options[0].text = t.allIntl;
+
+      renderDirectory();
+    }
+
+    function setupEventListeners() {
+      btnToggleLang.addEventListener('click', () => {
+        applyLanguage(currentLang === 'id' ? 'en' : 'id');
+      });
+
+      searchInput.addEventListener('input', renderDirectory);
+      filterJenjang.addEventListener('change', renderDirectory);
+      filterFakultas.addEventListener('change', renderDirectory);
+      filterRumpun.addEventListener('change', renderDirectory);
+      filterKampus.addEventListener('change', renderDirectory);
+      filterIntl.addEventListener('change', renderDirectory);
+
+      btnReset.addEventListener('click', resetFilters);
+      btnEmptyReset.addEventListener('click', resetFilters);
+
+      // Keyboard shortcut for search
+      document.addEventListener('keydown', (e) => {
+        if ((e.key === '/' || (e.ctrlKey && e.key === 'k')) && document.activeElement !== searchInput) {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      });
+
+      // View mode toggles
+      viewModeGrid.addEventListener('click', () => {
+        currentView = 'grid';
+        viewModeGrid.classList.add('active');
+        viewModeTable.classList.remove('active');
+        prodiGrid.style.display = 'grid';
+        prodiTableContainer.style.display = 'none';
+      });
+
+      viewModeTable.addEventListener('click', () => {
+        currentView = 'table';
+        viewModeTable.classList.add('active');
+        viewModeGrid.classList.remove('active');
+        prodiGrid.style.display = 'none';
+        prodiTableContainer.style.display = 'block';
+      });
+
+      // Quick chip clicks
+      chipButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          chipButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const type = btn.getAttribute('data-chip-type');
+          const val = btn.getAttribute('data-chip-val');
+
+          resetFilterDropdowns();
+
+          if (type === 'intl') {
+            filterIntl.value = val;
+          } else if (type === 'kampus') {
+            filterKampus.value = val;
+          } else if (type === 'fakultas') {
+            filterFakultas.value = val;
+          }
+
+          renderDirectory();
+        });
+      });
+
+      // Table sort headers
+      document.querySelectorAll('.data-table th[data-sort]').forEach(th => {
+        th.addEventListener('click', () => {
+          const col = th.getAttribute('data-sort');
+          if (sortColumn === col) {
+            sortAsc = !sortAsc;
+          } else {
+            sortColumn = col;
+            sortAsc = true;
+          }
+          renderDirectory();
+        });
+      });
+    }
+
+    function resetFilterDropdowns() {
+      filterJenjang.value = '';
+      filterFakultas.value = '';
+      filterRumpun.value = '';
+      filterKampus.value = '';
+      filterIntl.value = '';
+    }
+
+    function resetFilters() {
+      searchInput.value = '';
+      resetFilterDropdowns();
+      chipButtons.forEach(b => b.classList.remove('active'));
+      const allChip = document.querySelector('.chip-btn[data-chip-type="all"]');
+      if (allChip) allChip.classList.add('active');
+      renderDirectory();
+    }
+
+    function getFilteredData() {
+      if (!window.ITB_PRODI_DATA) return [];
+      const query = searchInput.value.trim().toLowerCase();
+      const jenjang = filterJenjang.value;
+      const fakultas = filterFakultas.value;
+      const rumpun = filterRumpun.value;
+      const kampus = filterKampus.value;
+      const intl = filterIntl.value;
+
+      return window.ITB_PRODI_DATA.filter(item => {
+        // Query match
+        if (query) {
+          const matchName = item.nama.toLowerCase().includes(query);
+          const matchNameEn = (item.nama_en || '').toLowerCase().includes(query);
+          const matchKode = (item.kode || '').toLowerCase().includes(query);
+          const matchFac = item.fakultas.toLowerCase().includes(query);
+          const matchFacCode = item.fakultas_singkatan.toLowerCase().includes(query);
+          const matchTpb = (item.tpb_fakultas || '').toLowerCase().includes(query);
+          const matchDesc = (item.deskripsi[currentLang] || '').toLowerCase().includes(query);
+          const matchKarir = (item.karir[currentLang] || []).some(k => k.toLowerCase().includes(query));
+
+          if (!matchName && !matchNameEn && !matchKode && !matchFac && !matchFacCode && !matchTpb && !matchDesc && !matchKarir) {
+            return false;
+          }
+        }
+
+        // Jenjang match
+        if (jenjang && item.jenjang !== jenjang) return false;
+
+        // Fakultas match
+        if (fakultas && item.fakultas_singkatan !== fakultas) return false;
+
+        // Rumpun match
+        if (rumpun && item.rumpun !== rumpun) return false;
+
+        // Kampus match
+        if (kampus && !item.lokasi.toLowerCase().includes(kampus.toLowerCase())) return false;
+
+        // Akreditasi Internasional match
+        if (intl) {
+          if (!item.akreditasi_internasional || !item.akreditasi_internasional.includes(intl)) {
+            return false;
+          }
+        }
+
+        return true;
+      }).sort((a, b) => {
+        let valA = a[sortColumn];
+        let valB = b[sortColumn];
+
+        if (typeof valA === 'string') {
+          valA = valA.toLowerCase();
+          valB = valB.toLowerCase();
+        }
+
+        if (valA < valB) return sortAsc ? -1 : 1;
+        if (valA > valB) return sortAsc ? 1 : -1;
+        return 0;
+      });
+    }
+
+    function renderDirectory() {
+      const filtered = getFilteredData();
+      resultsCount.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        prodiGrid.style.display = 'none';
+        prodiTableContainer.style.display = 'none';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      if (currentView === 'grid') {
+        prodiGrid.style.display = 'grid';
+        prodiTableContainer.style.display = 'none';
+      } else {
+        prodiGrid.style.display = 'none';
+        prodiTableContainer.style.display = 'block';
+      }
+
+      renderGrid(filtered);
+      renderTable(filtered);
+    }
+
+    function renderGrid(list) {
+      const t = I18N[currentLang];
+      prodiGrid.innerHTML = list.map(item => {
+        const title = currentLang === 'id' ? item.nama : (item.nama_en || item.nama);
+        const subTitle = currentLang === 'id' ? (item.nama_en || '') : item.nama;
+        const desc = item.deskripsi[currentLang] || item.deskripsi.id;
+        
+        // Quota calculations
+        const dtTotal = item.daya_tampung || 0;
+        const pSnbp = dtTotal > 0 ? (item.dt_snbp / dtTotal) * 100 : 0;
+        const pSnbt = dtTotal > 0 ? (item.dt_snbt / dtTotal) * 100 : 0;
+        const pSm = dtTotal > 0 ? (item.dt_smitb / dtTotal) * 100 : 0;
+
+        const campusShort = item.lokasi.replace('Kampus ITB ', '');
+
+        const intlBadges = (item.akreditasi_internasional || []).map(acc => 
+          `<span class="badge badge-intl">${acc}</span>`
+        ).join('');
+
+        return `
+          <div class="prodi-card" data-prodi-id="${item.id}">
+            <div>
+              <div class="card-top">
+                <div class="card-badges">
+                  <span class="badge badge-jenjang">${item.jenjang}</span>
+                  <span class="badge badge-tpb">${item.tpb_fakultas}</span>
+                  <span class="badge badge-campus">${campusShort}</span>
+                </div>
+                <span class="card-code">${item.kode}</span>
+              </div>
+
+              <h3 class="card-title">${title}</h3>
+              <div class="card-title-en">${subTitle}</div>
+
+              <div class="card-faculty">
+                <span>${item.fakultas}</span>
+              </div>
+
+              <p class="card-desc">${desc}</p>
+            </div>
+
+            <div>
+              <!-- Quota bar -->
+              <div class="quota-box">
+                <div class="quota-header">
+                  <span>${t.quotaLabel}</span>
+                  <span class="quota-total">${dtTotal} Kursi</span>
+                </div>
+                <div class="quota-bar-track">
+                  <div class="bar-seg-snbp" style="width: ${pSnbp}%" title="SNBP: ${item.dt_snbp}"></div>
+                  <div class="bar-seg-snbt" style="width: ${pSnbt}%" title="SNBT: ${item.dt_snbt}"></div>
+                  <div class="bar-seg-sm" style="width: ${pSm}%" title="SM-ITB: ${item.dt_smitb}"></div>
+                </div>
+                <div class="quota-legend">
+                  <span class="legend-item"><span class="legend-dot dot-snbp"></span>SNBP: ${item.dt_snbp}</span>
+                  <span class="legend-item"><span class="legend-dot dot-snbt"></span>SNBT: ${item.dt_snbt}</span>
+                  <span class="legend-item"><span class="legend-dot dot-sm"></span>SM: ${item.dt_smitb}</span>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <div class="card-intl-chips">
+                  <span class="badge badge-unggul">${item.akreditasi}</span>
+                  ${intlBadges}
+                </div>
+                <button class="btn-detail" data-id="${item.id}">${t.viewDetail}</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderTable(list) {
+      const t = I18N[currentLang];
+      prodiTableBody.innerHTML = list.map(item => {
+        const title = currentLang === 'id' ? item.nama : (item.nama_en || item.nama);
+        const subTitle = currentLang === 'id' ? (item.nama_en || '') : item.nama;
+        const intl = (item.akreditasi_internasional || []).join(', ') || '-';
+        const campusShort = item.lokasi.replace('Kampus ITB ', '');
+
+        return `
+          <tr data-prodi-id="${item.id}">
+            <td style="font-family: var(--font-mono); font-weight: 600;">${item.kode}</td>
+            <td>
+              <div class="table-prodi-name">${title}</div>
+              <div class="table-prodi-sub">${subTitle}</div>
+            </td>
+            <td>
+              <span class="badge badge-tpb">${item.tpb_fakultas}</span>
+            </td>
+            <td><span class="badge badge-jenjang">${item.jenjang}</span></td>
+            <td>${campusShort}</td>
+            <td>
+              <span class="badge badge-unggul">${item.akreditasi}</span>
+              ${item.akreditasi_internasional && item.akreditasi_internasional.length ? `<div style="margin-top: 4px; font-size: 0.725rem; font-family: var(--font-mono); color: var(--purple-accent);">${intl}</div>` : ''}
+            </td>
+            <td style="font-family: var(--font-mono); font-weight: 700;">${item.daya_tampung}</td>
+            <td>
+              <button class="btn-detail" data-id="${item.id}">${t.viewDetail}</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Execute on page load
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
