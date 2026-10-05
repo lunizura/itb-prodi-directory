@@ -128,7 +128,7 @@
       gap: 0.75rem;
     }
 
-    .btn-lang, .btn-view {
+    .btn-lang {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: #ffffff;
@@ -144,15 +144,9 @@
       font-family: var(--font-mono);
     }
 
-    .btn-lang:hover, .btn-view:hover {
+    .btn-lang:hover {
       background: rgba(255, 255, 255, 0.16);
       border-color: rgba(255, 255, 255, 0.3);
-    }
-
-    .btn-lang.active, .btn-view.active {
-      background: var(--itb-blue);
-      border-color: var(--itb-blue);
-      color: #ffffff;
     }
 
     /* Hero Section */
@@ -742,6 +736,337 @@
       margin-bottom: 1.5rem;
     }
 
+    /* Modal Dialog */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      max-width: 840px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--slate-200);
+      transform: scale(0.96);
+      transition: transform 0.25s ease;
+      overflow: hidden;
+    }
+
+    .modal-backdrop.open .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--slate-900) 0%, #032d4d 100%);
+      color: #ffffff;
+      padding: 1.75rem 2rem;
+      position: relative;
+      border-bottom: 1px solid var(--slate-800);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      line-height: 1;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    .modal-meta-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .modal-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+      color: #ffffff;
+    }
+
+    .modal-title-en {
+      font-size: 1rem;
+      color: #94a3b8;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-faculty-text {
+      font-size: 0.9rem;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .modal-body {
+      padding: 2rem;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* Quota Grid */
+    .modal-quota-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+    }
+
+    .modal-quota-card {
+      text-align: center;
+    }
+
+    .modal-quota-val {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      font-family: var(--font-mono);
+      line-height: 1.1;
+    }
+
+    .modal-quota-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--slate-500);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 0.25rem;
+    }
+
+    .modal-quota-pct {
+      font-size: 0.7rem;
+      color: var(--slate-400);
+      font-family: var(--font-mono);
+    }
+
+    /* TPB Pathway Box */
+    .tpb-pathway-card {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      position: relative;
+    }
+
+    .tpb-pathway-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0369a1;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tpb-pathway-desc {
+      font-size: 0.85rem;
+      color: #0f172a;
+      line-height: 1.55;
+    }
+
+    /* Section Blocks */
+    .modal-section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+      border-bottom: 2px solid var(--slate-200);
+      padding-bottom: 0.35rem;
+    }
+
+    .modal-desc-text {
+      font-size: 0.925rem;
+      color: var(--slate-700);
+      line-height: 1.65;
+    }
+
+    .pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill-item {
+      background: var(--slate-100);
+      border: 1px solid var(--slate-200);
+      color: var(--slate-800);
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.825rem;
+      font-weight: 600;
+    }
+
+    .career-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .career-item {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--slate-700);
+      line-height: 1.5;
+    }
+
+    .career-item::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--itb-blue);
+      font-weight: 800;
+    }
+
+    .ukt-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--slate-700);
+    }
+
+    .ukt-label {
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 0.25rem;
+    }
+
+    /* Modal Footer */
+    .modal-footer {
+      background: var(--slate-50);
+      border-top: 1px solid var(--slate-200);
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .modal-footer-left {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn-action-primary {
+      background: var(--itb-blue);
+      color: #ffffff;
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-action-primary:hover {
+      background: var(--itb-blue-dark);
+    }
+
+    .btn-action-secondary {
+      background: #ffffff;
+      border: 1px solid var(--slate-300);
+      color: var(--slate-700);
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-secondary:hover {
+      background: var(--slate-100);
+      color: var(--slate-900);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--slate-900);
+      color: #ffffff;
+      padding: 0.85rem 1.4rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      z-index: 200;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* Footer */
     footer {
       background: var(--slate-900);
@@ -819,6 +1144,30 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.75rem;
+      }
+      .modal-quota-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .modal-title {
+        font-size: 1.45rem;
+      }
+      .modal-header {
+        padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+      }
+      .modal-body {
+        padding: 1.25rem;
+      }
+      .modal-footer {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .modal-footer-left {
+        flex-direction: column;
+      }
+      .btn-action-primary, .btn-action-secondary {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -1012,6 +1361,103 @@
     </div>
   </main>
 
+  <!-- Interactive Modal Dialog -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-card" id="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <button class="modal-close-btn" id="modal-close" title="Tutup / Close" aria-label="Close modal">&times;</button>
+        <div class="modal-meta-row">
+          <span class="badge badge-jenjang" id="modal-badge-jenjang">S1</span>
+          <span class="badge badge-tpb" id="modal-badge-tpb">STEI-K</span>
+          <span class="badge badge-campus" id="modal-badge-campus">Kampus Ganesa</span>
+          <span class="badge badge-unggul" id="modal-badge-akreditasi">Unggul</span>
+          <span id="modal-intl-badges-wrap"></span>
+          <span class="card-code" style="color: #94a3b8;" id="modal-badge-code">13501</span>
+        </div>
+        <h2 class="modal-title" id="modal-title">Teknik Informatika</h2>
+        <div class="modal-title-en" id="modal-title-en">Informatics / Computer Science</div>
+        <div class="modal-faculty-text" id="modal-faculty">Sekolah Teknik Elektro dan Informatika (STEI)</div>
+      </div>
+
+      <div class="modal-body">
+        <!-- Quota summary 4-cards -->
+        <div class="modal-quota-grid">
+          <div class="modal-quota-card">
+            <div class="modal-quota-val" id="modal-quota-total">120</div>
+            <div class="modal-quota-name" id="i18n-m-total-dt">Total Kapasitas</div>
+            <div class="modal-quota-pct">100% Kuota</div>
+          </div>
+          <div class="modal-quota-card">
+            <div class="modal-quota-val" style="color: #0284c7;" id="modal-quota-snbp">36</div>
+            <div class="modal-quota-name">SNBP Prestasi</div>
+            <div class="modal-quota-pct" id="modal-pct-snbp">30%</div>
+          </div>
+          <div class="modal-quota-card">
+            <div class="modal-quota-val" style="color: #059669;" id="modal-quota-snbt">48</div>
+            <div class="modal-quota-name">SNBT UTBK</div>
+            <div class="modal-quota-pct" id="modal-pct-snbt">40%</div>
+          </div>
+          <div class="modal-quota-card">
+            <div class="modal-quota-val" style="color: #d97706;" id="modal-quota-sm">36</div>
+            <div class="modal-quota-name">SM-ITB Mandiri</div>
+            <div class="modal-quota-pct" id="modal-pct-sm">30%</div>
+          </div>
+        </div>
+
+        <!-- TPB Pathway Explanation Card -->
+        <div class="tpb-pathway-card">
+          <div class="tpb-pathway-title" id="i18n-tpb-title">
+            Mekanisme Penerimaan TPB (Tahap Persiapan Bersama)
+          </div>
+          <div class="tpb-pathway-desc" id="modal-tpb-desc">
+            Penerimaan mahasiswa sarjana ITB dilakukan melalui unit Fakultas/Sekolah TPB pada Tahun Pertama. Mahasiswa menempuh kurikulum sains dan teknik terpadu sebelum penjurusan spesifik program studi di Tahun Kedua berdasarkan minat dan capaian akademik.
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div>
+          <h4 class="modal-section-title" id="i18n-m-desc-title">Deskripsi Program Studi</h4>
+          <p class="modal-desc-text" id="modal-desc"></p>
+        </div>
+
+        <!-- Focus Areas -->
+        <div>
+          <h4 class="modal-section-title" id="i18n-m-fokus-title">Fokus Keilmuan & Kurikulum Utama</h4>
+          <div class="pills-container" id="modal-fokus-container"></div>
+        </div>
+
+        <!-- Career Prospects -->
+        <div>
+          <h4 class="modal-section-title" id="i18n-m-karir-title">Prospek Karir & Lintasan Alumni</h4>
+          <ul class="career-list" id="modal-karir-container"></ul>
+        </div>
+
+        <!-- Tuition Reference -->
+        <div class="ukt-card">
+          <div class="ukt-label" id="i18n-m-ukt-title">Struktur Biaya Pendidikan (UKT / SPP)</div>
+          <div id="modal-ukt-text">UKT 1 (Rp 0) s/d UKT 5 (Rp 12.500.000)</div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-left">
+          <a href="#" target="_blank" rel="noopener" class="btn-action-primary" id="modal-link-official">
+            <span id="i18n-m-btn-web">Kunjungi Situs Resmi</span>
+          </a>
+          <button class="btn-action-secondary" id="modal-btn-share">
+            <span id="i18n-m-btn-share">Salin Tautan</span>
+          </button>
+        </div>
+        <button class="btn-action-secondary" id="modal-btn-close">
+          <span id="i18n-m-btn-close">Tutup</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-msg">Tautan program studi berhasil disalin ke clipboard!</div>
+
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1058,6 +1504,7 @@
     let currentView = 'grid';
     let sortColumn = 'nama';
     let sortAsc = true;
+    let activeModalProdiId = null;
 
     const I18N = {
       id: {
@@ -1091,7 +1538,17 @@
         tpbLabel: "Jalur Masuk TPB:",
         footerDesc: "Direktori komprehensif program studi, fakultas/sekolah TPB, dan akreditasi internasional Institut Teknologi Bandung (ITB). Data dihimpun dari portal resmi Penerimaan Mahasiswa Baru ITB (admission.itb.ac.id) dan database akreditasi BAN-PT, LAM, ABET, ASIIN, AACSB.",
         footerPortals: "Portal Resmi",
-        footerEcosystem: "Ekosistem"
+        footerEcosystem: "Ekosistem",
+        mTotalDt: "Total Kapasitas",
+        tpbTitle: "Mekanisme Penerimaan TPB (Tahap Persiapan Bersama)",
+        mDescTitle: "Deskripsi Program Studi",
+        mFokusTitle: "Fokus Keilmuan & Kurikulum Utama",
+        mKarirTitle: "Prospek Karir & Lintasan Alumni",
+        mUktTitle: "Struktur Biaya Pendidikan (UKT / SPP)",
+        mBtnWeb: "Kunjungi Situs Resmi",
+        mBtnShare: "Salin Tautan",
+        mBtnClose: "Tutup",
+        toastCopied: "Tautan program studi berhasil disalin ke clipboard!"
       },
       en: {
         headerTitle: "ITB Study Programs Directory",
@@ -1124,7 +1581,17 @@
         tpbLabel: "TPB Pathway:",
         footerDesc: "Comprehensive directory of study programs, TPB faculties, and global accreditations of Bandung Institute of Technology (ITB). Grounded in official SPMB ITB admissions data and global accreditation boards.",
         footerPortals: "Official Portals",
-        footerEcosystem: "Ecosystem"
+        footerEcosystem: "Ecosystem",
+        mTotalDt: "Total Capacity",
+        tpbTitle: "TPB (Common First Year) Admission Framework",
+        mDescTitle: "Program Overview",
+        mFokusTitle: "Curriculum & Academic Focus Areas",
+        mKarirTitle: "Career Pathways & Alumni Trajectories",
+        mUktTitle: "Tuition & Financial Structure (UKT / Fees)",
+        mBtnWeb: "Visit Official Website",
+        mBtnShare: "Copy Link",
+        mBtnClose: "Close",
+        toastCopied: "Study program link copied to clipboard!"
       }
     };
 
@@ -1148,11 +1615,26 @@
     const viewModeGrid = document.getElementById('view-mode-grid');
     const viewModeTable = document.getElementById('view-mode-table');
 
+    // Modal DOM Elements
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const modalCloseBtn = document.getElementById('modal-close');
+    const modalBtnClose = document.getElementById('modal-btn-close');
+    const modalBtnShare = document.getElementById('modal-btn-share');
+    const modalLinkOfficial = document.getElementById('modal-link-official');
+    const toastMsg = document.getElementById('toast-msg');
+
     // Initialize
     function init() {
       applyLanguage(currentLang);
       setupEventListeners();
       renderDirectory();
+
+      // Check URL deep link
+      const urlParams = new URLSearchParams(window.location.search);
+      const prodiParam = urlParams.get('prodi');
+      if (prodiParam) {
+        openModal(prodiParam);
+      }
     }
 
     function applyLanguage(lang) {
@@ -1187,6 +1669,17 @@
       btnReset.textContent = t.resetBtn;
       btnEmptyReset.textContent = t.resetBtn;
 
+      // Modal Static Elements
+      document.getElementById('i18n-m-total-dt').textContent = t.mTotalDt;
+      document.getElementById('i18n-tpb-title').textContent = t.tpbTitle;
+      document.getElementById('i18n-m-desc-title').textContent = t.mDescTitle;
+      document.getElementById('i18n-m-fokus-title').textContent = t.mFokusTitle;
+      document.getElementById('i18n-m-karir-title').textContent = t.mKarirTitle;
+      document.getElementById('i18n-m-ukt-title').textContent = t.mUktTitle;
+      document.getElementById('i18n-m-btn-web').textContent = t.mBtnWeb;
+      document.getElementById('i18n-m-btn-share').textContent = t.mBtnShare;
+      document.getElementById('i18n-m-btn-close').textContent = t.mBtnClose;
+
       // Update options
       filterJenjang.options[0].text = t.allJenjang;
       filterFakultas.options[0].text = t.allFakultas;
@@ -1195,6 +1688,10 @@
       filterIntl.options[0].text = t.allIntl;
 
       renderDirectory();
+
+      if (activeModalProdiId) {
+        openModal(activeModalProdiId, false);
+      }
     }
 
     function setupEventListeners() {
@@ -1217,6 +1714,8 @@
         if ((e.key === '/' || (e.ctrlKey && e.key === 'k')) && document.activeElement !== searchInput) {
           e.preventDefault();
           searchInput.focus();
+        } else if (e.key === 'Escape' && modalBackdrop.classList.contains('open')) {
+          closeModal();
         }
       });
 
@@ -1273,6 +1772,141 @@
           renderDirectory();
         });
       });
+
+      // Delegate clicks for opening modal
+      document.addEventListener('click', (e) => {
+        const detailBtn = e.target.closest('.btn-detail');
+        if (detailBtn) {
+          e.stopPropagation();
+          const prodiId = detailBtn.getAttribute('data-id');
+          openModal(prodiId);
+          return;
+        }
+
+        const card = e.target.closest('.prodi-card');
+        if (card) {
+          const prodiId = card.getAttribute('data-prodi-id');
+          openModal(prodiId);
+          return;
+        }
+
+        const tableRow = e.target.closest('.data-table tbody tr');
+        if (tableRow) {
+          const prodiId = tableRow.getAttribute('data-prodi-id');
+          openModal(prodiId);
+          return;
+        }
+      });
+
+      // Modal close handlers
+      modalCloseBtn.addEventListener('click', closeModal);
+      modalBtnClose.addEventListener('click', closeModal);
+      modalBackdrop.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) {
+          closeModal();
+        }
+      });
+
+      // Share permalink button
+      modalBtnShare.addEventListener('click', () => {
+        if (!activeModalProdiId) return;
+        const url = window.location.origin + window.location.pathname + '?prodi=' + activeModalProdiId;
+        navigator.clipboard.writeText(url).then(() => {
+          showToast(I18N[currentLang].toastCopied);
+        }).catch(() => {
+          showToast(url);
+        });
+      });
+    }
+
+    function showToast(text) {
+      toastMsg.textContent = text;
+      toastMsg.classList.add('show');
+      setTimeout(() => {
+        toastMsg.classList.remove('show');
+      }, 3000);
+    }
+
+    function openModal(prodiId, updateHistory = true) {
+      if (!window.ITB_PRODI_DATA) return;
+      const item = window.ITB_PRODI_DATA.find(p => p.id === prodiId);
+      if (!item) return;
+
+      activeModalProdiId = prodiId;
+      if (updateHistory) {
+        history.pushState(null, '', '?prodi=' + prodiId);
+      }
+
+      const title = currentLang === 'id' ? item.nama : (item.nama_en || item.nama);
+      const subTitle = currentLang === 'id' ? (item.nama_en || '') : item.nama;
+      const desc = item.deskripsi[currentLang] || item.deskripsi.id;
+      const campusShort = item.lokasi.replace('Kampus ITB ', '');
+
+      // Badges
+      document.getElementById('modal-badge-jenjang').textContent = item.jenjang;
+      document.getElementById('modal-badge-tpb').textContent = item.tpb_fakultas;
+      document.getElementById('modal-badge-campus').textContent = campusShort;
+      document.getElementById('modal-badge-akreditasi').textContent = item.akreditasi;
+      document.getElementById('modal-badge-code').textContent = item.kode;
+
+      const intlWrap = document.getElementById('modal-intl-badges-wrap');
+      intlWrap.innerHTML = (item.akreditasi_internasional || []).map(acc => 
+        `<span class="badge badge-intl">${acc}</span>`
+      ).join(' ');
+
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-title-en').textContent = subTitle;
+      document.getElementById('modal-faculty').textContent = `${item.fakultas} (${item.fakultas_singkatan}) - ${item.lokasi}`;
+
+      // Quotas
+      const dtTotal = item.daya_tampung || 0;
+      const pSnbp = dtTotal > 0 ? Math.round((item.dt_snbp / dtTotal) * 100) : 0;
+      const pSnbt = dtTotal > 0 ? Math.round((item.dt_snbt / dtTotal) * 100) : 0;
+      const pSm = dtTotal > 0 ? Math.round((item.dt_smitb / dtTotal) * 100) : 0;
+
+      document.getElementById('modal-quota-total').textContent = dtTotal;
+      document.getElementById('modal-quota-snbp').textContent = item.dt_snbp;
+      document.getElementById('modal-pct-snbp').textContent = pSnbp + '%';
+      document.getElementById('modal-quota-snbt').textContent = item.dt_snbt;
+      document.getElementById('modal-pct-snbt').textContent = pSnbt + '%';
+      document.getElementById('modal-quota-sm').textContent = item.dt_smitb;
+      document.getElementById('modal-pct-sm').textContent = pSm + '%';
+
+      // TPB explanation text
+      const tpbDesc = currentLang === 'id' 
+        ? `Penerimaan sarjana program studi ${item.nama} dilaksanakan melalui unit penerimaan fakultas ${item.tpb_fakultas}. Mahasiswa menjalani Tahap Persiapan Bersama (TPB) selama 2 semester pertama (mata kuliah dasar kalkulus, fisika, kimia, komputasi) sebelum dialokasikan secara definitif ke program studi ini pada Tahun Kedua.`
+        : `Undergraduate admission for ${item.nama_en || item.nama} is conducted via the faculty admission unit ${item.tpb_fakultas}. Students undergo the Common First Year (TPB) covering foundational calculus, physics, chemistry, and computing before definitive allocation to this specific major in Year 2.`;
+      document.getElementById('modal-tpb-desc').textContent = tpbDesc;
+
+      // Description
+      document.getElementById('modal-desc').textContent = desc;
+
+      // Focus tags
+      const fokusList = item.fokus[currentLang] || item.fokus.id || [];
+      const fokusContainer = document.getElementById('modal-fokus-container');
+      fokusContainer.innerHTML = fokusList.map(f => `<span class="pill-item">${f}</span>`).join('');
+
+      // Career list
+      const karirList = item.karir[currentLang] || item.karir.id || [];
+      const karirContainer = document.getElementById('modal-karir-container');
+      karirContainer.innerHTML = karirList.map(k => `<li class="career-item">${k}</li>`).join('');
+
+      // UKT
+      document.getElementById('modal-ukt-text').textContent = item.ukt_rentang || 'Mengacu pada SK Rektor ITB tentang Biaya Operasional Pendidikan.';
+
+      // Official web link
+      modalLinkOfficial.href = item.website || 'https://admission.itb.ac.id';
+
+      // Show modal
+      modalBackdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.remove('open');
+      document.body.style.overflow = '';
+      activeModalProdiId = null;
+      history.pushState(null, '', window.location.pathname);
     }
 
     function resetFilterDropdowns() {
