@@ -8,6 +8,7 @@
 [![Akreditasi Unggul](https://img.shields.io/badge/Unggul-100%25-gold.svg)](#ringkasan-data)
 [![Akreditasi Internasional](https://img.shields.io/badge/Internasional-47%20Prodi-purple.svg)](#ringkasan-data)
 [![Deployment](https://img.shields.io/badge/Deployment-GitHub%20Pages%20Ready-brightgreen.svg)](https://lunizura.github.io/itb-prodi-directory/)
+[![CI Validation](https://github.com/lunizura/itb-prodi-directory/actions/workflows/ci.yml/badge.svg)](https://github.com/lunizura/itb-prodi-directory/actions)
 
 [Bahasa Indonesia](#bahasa-indonesia) | [English](#english)
 
@@ -83,6 +84,14 @@ Penerimaan jenjang Sarjana (S1) di ITB menerapkan sistem **Tahap Persiapan Bersa
 - **SM-ITB (Seleksi Mandiri ITB):** Seleksi ujian mandiri daring ITB, nilai UTBK, dan tes kemampuan akademik/seni rupa (kuota ~30%).
 - **IUP (International Undergraduate Program):** Program sarjana kelas internasional dengan bahasa pengantar bahasa Inggris dan program kemitraan pertukaran luar negeri.
 
+### Panduan Kontribusi Komunitas
+
+Repositori ini terbuka untuk perbaikan data dan kontribusi dari sivitas akademika maupun calon mahasiswa baru:
+- Baca panduan tata kelola dan alur kerja lengkap di [CONTRIBUTING.md](CONTRIBUTING.md).
+- Laporkan koreksi daya tampung atau akreditasi melalui [Template Koreksi Data](.github/ISSUE_TEMPLATE/data_correction.yml).
+- Usulkan fitur antarmuka atau direktori baru melalui [Template Usulan Fitur](.github/ISSUE_TEMPLATE/feature_request.yml).
+- Seluruh Pull Request diverifikasi secara otomatis oleh GitHub Actions CI.
+
 ---
 
 ## English
@@ -146,12 +155,28 @@ Undergraduate admissions at ITB operate on the **Tahap Persiapan Bersama (TPB)**
 - At the conclusion of Year 1, students are placed into their degree specialization according to their preference, academic performance during TPB, and program quotas.
 - Specific programs at Jatinangor and Cirebon campuses also offer direct admission pathways.
 
+### Community Governance & Contributing
+
+We welcome contributions from prospective students, researchers, and academic counselors:
+- Review the complete onboarding rules and local testing guide in [CONTRIBUTING.md](CONTRIBUTING.md).
+- Report quota, track, or accreditation discrepancies via the [Data Discrepancy Form](.github/ISSUE_TEMPLATE/data_correction.yml).
+- Propose new visual features or data filters via the [Feature Proposal Form](.github/ISSUE_TEMPLATE/feature_request.yml).
+- Pre-merge checks and automated test runs are enforced via GitHub Actions CI on all branches and pull requests.
+
 ---
 
 ## File Inventory
 
 ```
 itb-prodi-directory/
+|-- .github/
+|   |-- workflows/
+|   |   `-- ci.yml             # GitHub Actions continuous integration pipeline
+|   |-- ISSUE_TEMPLATE/
+|   |   |-- config.yml         # Community contact links and issue settings
+|   |   |-- data_correction.yml# Structured issue form for data discrepancies
+|   |   `-- feature_request.yml# Structured issue form for feature proposals
+|   `-- pull_request_template.md # Mandatory pre-merge verification checklist
 |-- data/
 |   |-- itb_prodi.json         # Raw structured dataset of 58 study programs
 |   |-- itb_prodi.js           # Browser-ready dataset and metadata definitions
@@ -161,6 +186,7 @@ itb-prodi-directory/
 |   `-- build_itb_dataset.py   # Dataset builder script and quota parity generator
 |-- tests/
 |   `-- test_itb_directory.py  # End-to-end validation and regression test suite
+|-- CONTRIBUTING.md            # Guidelines for external contributors
 |-- index.html                 # Responsive bilingual web directory with modal
 |-- LICENSE                    # MIT open-source license
 `-- README.md                  # Comprehensive bilingual documentation
