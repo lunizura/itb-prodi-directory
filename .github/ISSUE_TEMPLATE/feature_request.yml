@@ -1,0 +1,50 @@
+name: Feature Proposal
+description: Propose a new feature, visual tool, or enhancement for the ITB directory
+title: "[Feature Proposal]: "
+labels: ["enhancement", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an enhancement to the ITB Study Programs Directory. Please describe the problem your proposal addresses and how it benefits students and visitors.
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: What limitation or missing functionality currently exists?
+      placeholder: "e.g. Visitors cannot easily compare tuition fees or campus locations between Jatinangor and Ganesha..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the specific behavior, UI component, or data view you would like to see.
+      placeholder: "e.g. Introduce a campus location comparison filter or interactive tuition breakdown..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature_scope
+    attributes:
+      label: Feature Scope
+      description: Which part of the application does this proposal target?
+      options:
+        - "Search, Filters, and Sorting Controls"
+        - "Program Cards and Grid Layout"
+        - "Detailed Modal View and Curriculum Deep-dive"
+        - "Data Export (CSV / JSON / Script bundles)"
+        - "Accessibility and Mobile Responsiveness"
+        - "Bilingual Localization (ID / EN)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives_considered
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+    validations:
+      required: false
