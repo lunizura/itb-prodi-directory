@@ -1,0 +1,74 @@
+name: Data Correction Report
+description: Report an inaccuracy, outdated quota, or accreditation update for an ITB program
+title: "[Data Correction]: "
+labels: ["data-fix", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an academic data discrepancy. Please provide official references (such as `admission.itb.ac.id`, BAN-PT, or international accreditation agencies) to expedite verification.
+
+  - type: dropdown
+    id: faculty
+    attributes:
+      label: Faculty or School (Fakultas / Sekolah)
+      description: Select the ITB academic unit associated with the program.
+      options:
+        - "FITB - Fakultas Ilmu dan Teknologi Kebumian"
+        - "FMIPA - Fakultas Matematika dan Ilmu Pengetahuan Alam"
+        - "FSRD - Fakultas Seni Rupa dan Desain"
+        - "FTI - Fakultas Teknologi Industri"
+        - "FTMD - Fakultas Teknik Mesin dan Dirgantara"
+        - "FTTM - Fakultas Teknik Pertambangan dan Perminyakan"
+        - "FTSL - Fakultas Teknik Sipil dan Lingkungan"
+        - "SAPPK - Sekolah Arsitektur, Perencanaan dan Pengembangan Kebijakan"
+        - "SBM - Sekolah Bisnis dan Manajemen"
+        - "SF - Sekolah Farmasi"
+        - "SITH - Sekolah Ilmu dan Teknologi Hayati"
+        - "STEI - Sekolah Teknik Elektro dan Informatika"
+    validations:
+      required: true
+
+  - type: input
+    id: program_name
+    attributes:
+      label: Program Name (Nama Program Studi)
+      description: Enter the full program name (e.g. Teknik Informatika, Desain Komunikasi Visual).
+      placeholder: "e.g. Teknik Informatika"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: discrepancy_type
+    attributes:
+      label: Discrepancy Category
+      description: Select all fields requiring correction.
+      options:
+        - label: "Total Daya Tampung (Overall Seat Capacity)"
+        - label: "SNBP Quota Allocation"
+        - label: "SNBT Quota Allocation"
+        - label: "SM-ITB Mandiri Quota Allocation"
+        - label: "National Accreditation Status (BAN-PT / LAM)"
+        - label: "International Accreditation (ASIIN / ABET / KAAB / IABEE)"
+        - label: "Campus Location (Ganesha / Jatinangor / Cirebon)"
+        - label: "Academic Focus / Career Prospects Text"
+
+  - type: textarea
+    id: correction_details
+    attributes:
+      label: Current vs Corrected Data
+      description: Detail the current value in this directory and the proposed correction.
+      placeholder: |
+        Current Value:
+        Proposed Correct Value:
+    validations:
+      required: true
+
+  - type: input
+    id: official_source
+    attributes:
+      label: Official Reference URL
+      description: Provide a direct link to official ITB admission documents or accreditation databases.
+      placeholder: "https://admission.itb.ac.id/..."
+    validations:
+      required: true
