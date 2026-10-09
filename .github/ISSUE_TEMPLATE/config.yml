@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/lunizura/itb-prodi-directory/discussions
+    about: Ask questions, share campus experiences, or discuss ITB admission strategies.
+  - name: Official ITB Admission Portal
+    url: https://admission.itb.ac.id/
+    about: Official information regarding SNBP, SNBT, and Seleksi Mandiri ITB (SM-ITB).
+  - name: Official ITB Academic Website
+    url: https://www.itb.ac.id/
+    about: Official portal of Institut Teknologi Bandung, faculties, and research centers.
