@@ -134,18 +134,34 @@ Designed for prospective university applicants, active students, faculty members
 
 ### Structure of ITB Faculties and Schools
 
-1. **FITB** (Faculty of Earth Sciences and Technology) - Ganesa Campus
-2. **FMIPA** (Faculty of Mathematics and Natural Sciences) - Ganesa Campus
-3. **FSRD** (Faculty of Visual Art and Design) - Ganesa & Cirebon Campuses
-4. **FTI** (Faculty of Industrial Technology) - Ganesa, Jatinangor & Cirebon Campuses
-5. **FTMD** (Faculty of Mechanical and Aerospace Engineering) - Ganesa Campus
-6. **FTSL** (Faculty of Civil and Environmental Engineering) - Ganesa & Jatinangor Campuses
-7. **FTTM** (Faculty of Mining and Petroleum Engineering) - Ganesa & Cirebon Campuses
-8. **SAPPK** (School of Architecture, Planning and Policy Development) - Ganesa & Cirebon Campuses
-9. **SBM** (School of Business and Management) - Ganesa & Jakarta Campuses
-10. **SF** (School of Pharmacy) - Ganesa Campus
-11. **SITH** (School of Life Sciences and Technology) - Ganesa & Jatinangor Campuses
-12. **STEI** (School of Electrical Engineering and Informatics) - Ganesa Campus
+Explore dedicated markdown profiles for all 12 ITB faculties and academic schools with history, accredited departments, and laboratory facilities:
+
+| Code | Faculty / Academic School | Campus Locations | Documentation |
+|---|---|---|---|
+| **FSRD** | Fakultas Seni Rupa dan Desain | Ganesha, Jatinangor, Cirebon | [docs/schools/fsrd.md](docs/schools/fsrd.md) |
+| **SBM** | Sekolah Bisnis dan Manajemen | Ganesha, Jakarta | [docs/schools/sbm.md](docs/schools/sbm.md) |
+| **SITH** | Sekolah Ilmu dan Teknologi Hayati | Ganesha, Jatinangor | [docs/schools/sith.md](docs/schools/sith.md) |
+| **STEI** | Sekolah Teknik Elektro dan Informatika | Ganesha | [docs/schools/stei.md](docs/schools/stei.md) |
+| **FTMD** | Fakultas Teknik Mesin dan Dirgantara | Ganesha | [docs/schools/ftmd.md](docs/schools/ftmd.md) |
+| **FTTM** | Fakultas Teknik Pertambangan dan Perminyakan | Ganesha, Cirebon | [docs/schools/fttm.md](docs/schools/fttm.md) |
+| **FTSL** | Fakultas Teknik Sipil dan Lingkungan | Ganesha, Jatinangor | [docs/schools/ftsl.md](docs/schools/ftsl.md) |
+| **FTI** | Fakultas Teknologi Industri | Ganesha, Jatinangor, Cirebon | [docs/schools/fti.md](docs/schools/fti.md) |
+| **FMIPA** | Fakultas Matematika dan Ilmu Pengetahuan Alam | Ganesha | [docs/schools/fmipa.md](docs/schools/fmipa.md) |
+| **FITB** | Fakultas Ilmu dan Teknologi Kebumian | Ganesha, Cirebon | [docs/schools/fitb.md](docs/schools/fitb.md) |
+| **SAPPK** | Sekolah Arsitektur, Perencanaan dan Pengembangan Kebijakan | Ganesha, Cirebon | [docs/schools/sappk.md](docs/schools/sappk.md) |
+| **SF** | Sekolah Farmasi | Ganesha | [docs/schools/sf.md](docs/schools/sf.md) |
+
+### Admissions, Multi-Campus & Academic FAQ Guides
+
+Comprehensive guides detailing admission pathways, score requirements, and campus life:
+
+- **SNBP Pathway:** [docs/admissions/snbp.md](docs/admissions/snbp.md) - School ranking criteria, quota percentages, and portfolio requirements.
+- **SNBT UTBK Benchmark:** [docs/admissions/snbt.md](docs/admissions/snbt.md) - Subtest syllabus, scoring percentiles, and historical benchmarks.
+- **Seleksi Mandiri ITB (SM-ITB):** [docs/admissions/seleksi_mandiri.md](docs/admissions/seleksi_mandiri.md) - Exam format, direct major selection, and UKT/IPI structure.
+- **International Undergraduate Program (IUP):** [docs/admissions/iup.md](docs/admissions/iup.md) - English-medium instruction, partner universities, and double degrees.
+- **Kampus Ganesha (Bandung):** [docs/campuses/ganesha.md](docs/campuses/ganesha.md) - Historical architecture, Labtek clusters, and central facilities.
+- **Kampus Jatinangor & Cirebon:** [docs/campuses/jatinangor_cirebon.md](docs/campuses/jatinangor_cirebon.md) - Bio-engineering center and Rebana industrial growth corridor.
+- **Academic FAQ:** [docs/faq.md](docs/faq.md) - TPB minimum passing criteria, major allocation mechanics, and credit transfers.
 
 ### The TPB (Common First Year) System
 
@@ -159,6 +175,8 @@ Undergraduate admissions at ITB operate on the **Tahap Persiapan Bersama (TPB)**
 
 We welcome contributions from prospective students, researchers, and academic counselors:
 - Review the complete onboarding rules and local testing guide in [CONTRIBUTING.md](CONTRIBUTING.md).
+- Security vulnerability disclosure protocol is maintained in [SECURITY.md](SECURITY.md).
+- Community behavioral expectations follow Contributor Covenant 2.1 in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 - Report quota, track, or accreditation discrepancies via the [Data Discrepancy Form](.github/ISSUE_TEMPLATE/data_correction.yml).
 - Propose new visual features or data filters via the [Feature Proposal Form](.github/ISSUE_TEMPLATE/feature_request.yml).
 - Pre-merge checks and automated test runs are enforced via GitHub Actions CI on all branches and pull requests.
@@ -182,14 +200,39 @@ itb-prodi-directory/
 |   |-- itb_prodi.js           # Browser-ready dataset and metadata definitions
 |   |-- itb_prodi.csv          # Tabular dataset for analytical tools and spreadsheets
 |   `-- metadata.json          # System metadata, counts, and verification metrics
+|-- docs/
+|   |-- admissions/
+|   |   |-- iup.md             # International Undergraduate Program guide
+|   |   |-- seleksi_mandiri.md # Seleksi Mandiri ITB (SM-ITB) examination format
+|   |   |-- snbp.md            # SNBP admission pathway criteria and quotas
+|   |   `-- snbt.md            # SNBT UTBK score benchmarks and historical weights
+|   |-- campuses/
+|   |   |-- ganesha.md         # Kampus Ganesha Bandung architectural history
+|   |   `-- jatinangor_cirebon.md # Kampus Jatinangor and Cirebon regional profiles
+|   |-- schools/
+|   |   |-- fitb.md            # Fakultas Ilmu dan Teknologi Kebumian profile
+|   |   |-- fmipa.md           # Fakultas Matematika dan Ilmu Pengetahuan Alam profile
+|   |   |-- fsrd.md            # Fakultas Seni Rupa dan Desain profile
+|   |   |-- fti.md             # Fakultas Teknologi Industri profile
+|   |   |-- ftmd.md            # Fakultas Teknik Mesin dan Dirgantara profile
+|   |   |-- ftsl.md            # Fakultas Teknik Sipil dan Lingkungan profile
+|   |   |-- fttm.md            # Fakultas Teknik Pertambangan dan Perminyakan profile
+|   |   |-- sappk.md           # Sekolah Arsitektur, Perencanaan dan Pengembangan Kebijakan
+|   |   |-- sbm.md             # Sekolah Bisnis dan Manajemen profile
+|   |   |-- sf.md              # Sekolah Farmasi profile
+|   |   |-- sith.md            # Sekolah Ilmu dan Teknologi Hayati profile
+|   |   `-- stei.md            # Sekolah Teknik Elektro dan Informatika profile
+|   `-- faq.md                 # Academic FAQ on TPB, major allocation, and graduation
 |-- scripts/
 |   `-- build_itb_dataset.py   # Dataset builder script and quota parity generator
 |-- tests/
 |   `-- test_itb_directory.py  # End-to-end validation and regression test suite
+|-- CODE_OF_CONDUCT.md         # Contributor Covenant 2.1 standards
 |-- CONTRIBUTING.md            # Guidelines for external contributors
 |-- index.html                 # Responsive bilingual web directory with modal
 |-- LICENSE                    # MIT open-source license
-`-- README.md                  # Comprehensive bilingual documentation
+|-- README.md                  # Comprehensive bilingual documentation
+`-- SECURITY.md                # Vulnerability reporting protocol and SLAs
 ```
 
 ## Indonesian Higher Education Data Ecosystem
